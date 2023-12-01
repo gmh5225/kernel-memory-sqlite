@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RollForward>LatestMajor</RollForward>
+        <AssemblyName>Microsoft.KernelMemory.SQLite</AssemblyName>
+        <RootNamespace>Microsoft.KernelMemory.SQLite</RootNamespace>
+        <IsPackable>true</IsPackable>
+        <PackageId>Microsoft.KernelMemory.SQLite</PackageId>
+        <NoWarn>CA1724,NU5104</NoWarn>
+    </PropertyGroup>
+
+    <Import Project="../nuget-package.props" />
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.KernelMemory.Abstractions" />
+        <PackageReference Include="Microsoft.SemanticKernel.Connectors.Memory.Sqlite" />
+    </ItemGroup>
+
+    <Import Project="../code-analysis.props" />
+
+</Project>
